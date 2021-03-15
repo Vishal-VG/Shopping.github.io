@@ -10,40 +10,67 @@ fetch("listing.json")
 })
 
 
+// function appendData(data){
+//     var main=document.getElementById("anand");
+    
+//     for(var i=0;i<data.length;i++){
+       
+        
+//         var p=document.createElement("div");
+//         p.classList.add("p-1","cards")
+//         p.style.width = "400px";
+//         p.style.height = "530px";
+//         let product=`
+      
+//         <a onclick="setId(${data[i].id})" > 
+        
+//         <div class="card">
+//         <img class="card-img-top" src="${data[i].image}" alt="Card image cap" width="20px"  height="400px"  >
+        
+//         <div class="card-body">
+//           <h5 class="card-title">${data[i].name}</h5>
+//           <h5 class="card-text">MRP: ${data[i].price}</h5>
+//           <h5 class="card-text">Brand: ${data[i].brand}</h5>
+//         </div>
+//         </div>
+        
+//       </a>
+//       `
+//         p.innerHTML+=product;
+//         main.appendChild(p);
+        
+//     }    
+// }    
+// function setId(id){
+//    window.document.location="landing.html"+"?id="+id;
+// }    
 function appendData(data){
     var main=document.getElementById("anand");
     
     for(var i=0;i<data.length;i++){
-       
-        
+    
         var p=document.createElement("div");
-        p.classList.add("p-1","cards")
-        p.style.width = "400px";
-        p.style.height = "530px";
+        p.classList.add("p-3","cards")
         let product=`
-      
-        <a onclick="setId(${data[i].id})" > 
-        
-        <div class="card">
-        <img class="card-img-top" src="${data[i].image}" alt="Card image cap"  width="100px" height="400px">
+        <a onclick="setId(${data[i].id})"> 
+        <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="${data[i].image}" alt="image" width="200px">
         <div class="card-body">
-          <h5 class="card-title">${data[i].name}</h5>
-          <h5 class="card-text">MRP: ${data[i].price}</h5>
-          <h5 class="card-text">Brand: ${data[i].brand}</h5>
+        <h5 class="card-title">${data[i].name}</h5>
+                   <h5 class="card-text">MRP: ${data[i].price}</h5>
+                   <h5 class="card-text">Brand: ${data[i].brand}</h5>
         </div>
         </div>
-        
-      </a>
-      `
+      </a>`
         p.innerHTML+=product;
         main.appendChild(p);
         
     }    
 }    
 function setId(id){
-   window.document.location="landing.html"+"?id="+id;
-}    
-
+    // localStorage.setItem("prdId",id);
+    window.document.location="Landing.html"+"?id="+id;
+}
 
 
 function applyFilters(){
