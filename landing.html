@@ -20,18 +20,18 @@
           }
         </script>
 <style>
-  @media only screen and (max-width:980px){
+  /* @media only screen and (max-width:980px){
           #land{
             margin-top: 100px;
             margin-left: 40px;
           }
-        }
+        } */
 </style>
      
     </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkslategray;">
+  <nav class="navbar navbar-expand-lg navbar-light mb-3 shadow" style="background-color: darkslategray;">
     <div class="container-fluid">
       <div class="nav justify-content-center" onclick="logo()" style="color: white;">
         <h2>G-CLICKS</h2>
@@ -46,19 +46,19 @@
     
             
   
-<br><br><br>
-<div class="container">
+
+<div class="container mb-2">
   <div class="row">
-    <div class="col-sm-5">
-      <img src="" id="image" alt="" width="300px">
+    <div class="col-md-5 border d-flex align-items-center justify-content-center pt-2 pb-2 shadow ">
+      <img src="" id="image" alt="" height="300px" width="80%" >
   </div>
-  <div class="col-sm-7" id="land">
-      <h1 id="name"></h1>
+  <div class="col-md-7 border" id="land">
+      <h1 id="name" style="color: darkslategray;"></h1>
       <h3 id="price"></h3>
       <h3 id="rating"></h3>
       <h3 id="Brand"></h3>
       <br>
-      <h2>Description</h2>
+      <h2 style="color: darkslategray;">Description</h2>
       <hr>
       <ul>
         <li>
@@ -71,21 +71,22 @@
           <h5 id="desc2"></h5>
         </li>
       </ul>
-      <button class="btn btn-success" onclick="myCart()">Add to cart</button>
+      <div class="d-flex justify-content-start ml-3"><button class="btn btn-lg btn-success" onclick="myCart()">Add to cart</button></div>
      
   </div>
 </div>
 </div>
 
 
-<br><br><br>
+<br>
   <!-- Footer section -->
-  <div class="container-fluid border">
-    <footer class="bg-light text-center text-white">
+  <div class="container-fluid">
+    <div class="row bg-light text-white d-flex justify-content-center border shadow">
       <!-- Grid container -->
-      <div class="container p-4 pb-0">
+      <!-- <div class="container p-4 pb-0"> -->
         <!-- Section: Social media -->
-        <section class="mb-4">
+        <div class="d-flex justify-content-center">
+        <section class="m-3">
           <!-- Facebook -->
           <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
               class="fa fa-facebook-f"></i></a>
@@ -107,17 +108,21 @@
           <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
               class="fa fa-github"></i></a>
         </section>
-        <!-- Section: Social media -->
       </div>
+    </div>
+        <!-- Section: Social media -->
+      <!-- </div> -->
       <!-- Grid container -->
   
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: darkslategray;">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">G-CLICKS.com</a>
+      <div class="row">
+      <div class="d-flex justify-content-center p-3 " style="background-color: darkslategray;">
+        <h6 class="text-light">© 2020 Copyright:</h6>
+        <h6><a class="text-white" href="https://mdbootstrap.com/">G-CLICKS.com</a></h6>
       </div>
+    </div>
       <!-- Copyright -->
-    </footer>
+    
   </div>
     
 </body>

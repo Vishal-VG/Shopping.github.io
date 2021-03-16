@@ -1,7 +1,7 @@
 [
     {
     "id":1,
-    "name":"Fossil FLYNN Analog Watch-For Men",
+    "name":"Fossil FLYNN Analog-For Men",
     "price":6495,
     "brand":"Fossil",
     "image":"fossil1.jpeg",
@@ -25,7 +25,7 @@
 },
 {
     "id":3,
-    "name":"Fossil  Analog Watch - For women",
+    "name":"Fossil Analog Watch - For women",
     "price":9495,
     "brand":"Fossil",
     "image":"womenf1.jpeg",
@@ -68,6 +68,42 @@
     "rating":4,
     "type":"digital",
     "desc":"This is a genuine CASIO product. The product comes with a standard brand warranty of 2 Years.",
+    "desc1":"30 Day Return Policy",
+    "desc2":"Cash on Delivery available"
+},
+{
+    "id":7,
+    "name":"GrandMaster from Titan with  Stainless Steel Strap",
+    "price":7490,
+    "brand":"Titan",
+    "image":"gmt-1.jpg",
+    "rating":5,
+    "type":"analog",
+    "desc":"This is a genuine Titan product. The product comes with a standard brand warranty of 2 Years.",
+    "desc1":"30 Day Return Policy",
+    "desc2":"Cash on Delivery available"
+},
+{
+    "id":8,
+    "name":"TraQ Cardio By Titan - GPS Enabled Performance Gear",
+    "price":23900,
+    "brand":"Titan",
+    "image":"tct.jpg",
+    "rating":5,
+    "type":"digital",
+    "desc":"This is a genuine Titan product. The product comes with a standard brand warranty of 2 Years.",
+    "desc1":"30 Day Return Policy",
+    "desc2":"Cash on Delivery available"
+},
+{
+    "id":9,
+    "name":"Workwear Watch with Black Dial & Stainless Steel Strap",
+    "price":4900,
+    "brand":"Titan",
+    "image":"www.jpg",
+    "rating":4,
+    "type":"analog",
+    "desc":"This is a genuine Tian product. The product comes with a standard brand warranty of 2 Years.",
     "desc1":"30 Day Return Policy",
     "desc2":"Cash on Delivery available"
 }

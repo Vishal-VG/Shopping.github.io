@@ -22,17 +22,19 @@
     #filter {
       /* margin-left: 50px; */
       font-size: 25px;
-      background-color: darkslategray;
-      color: aliceblue;
-      width: 250px;
     }
 
-    @media only screen and (max-width:980px) {
+
+    .cards:hover{
+      cursor: pointer;
+        box-shadow: 1px 1px 6px 3px darkslategray;;
+    }
+    /* @media only screen and (max-width:980px) {
       #anand {
         margin-top: 100px;
         margin-left: 40px;
       }
-    }
+    } */
   </style>
 </head>
 
@@ -143,16 +145,16 @@
     </button>
   </div>
 
-<br><br>
+
   <!-- ============================================================================= -->
   <!-- Side nav bar -->
   <!-- <div class="d-flex mx-2 flex-row bd-highlight mb-3"> -->
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-2">
-          <div class="d-flex mx-2 flex-row bd-highlight mb-3">
+        <div class="col-sm-3 col-lg-2 mt-4 shadow">
+          <div class="d-flex mx-2 flex-row bd-highlight mb-3  border mt-3 shadow navbar-light bg-light sticky-sm-top">
             <!-- Filters -->
-            <div class="p-2 bd-highlight" id="filter">
+            <div class="p-2 bd-highlight">
               <label for="Filter" class="px-3"><strong>Filters</strong></label><br>
               <label for="Brands" class="pt-2"><strong>Brands</strong></label>
               <!-- First checkbox -->
@@ -198,14 +200,14 @@
               <!-- Lense checkbox -->
               <div class="form-check">
                 
-                <button class="btn btn-info" onclick="applyFilters()">Apply Filter</button>
+                <button class="btn btn-info " onclick="applyFilters()">Apply Filter</button>
               </div>
               </div>
               </div>
         </div>
           <!--display the items-->
-        <div class="col-lg-10">
-           <div class="d-flex flex-wrap col-md-12" id="anand" >
+        <div class="col-sm-9 col-lg-10 mt-3">
+           <div class="d-flex flex-wrap" id="anand">
     
            </div>
         </div>
