@@ -53,5 +53,5 @@ function myCart(){
         localStorage.setItem("carts",JSON.stringify(m));
         
     }
-    window.document.location="Cart.html";
+    window.location.href="Cart.html";
 }
